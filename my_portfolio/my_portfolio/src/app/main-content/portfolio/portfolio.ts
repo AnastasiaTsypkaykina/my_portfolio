@@ -1,12 +1,12 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { Project } from './components/project/project';
-
+import { Feedback } from './components/feedback/feedback/feedback';
 import { SectionDivider } from '../../shared/section-divider/section-divider';
 
 @Component({
   selector: 'app-portfolio',
-  imports: [TranslateModule, Project,  SectionDivider],
+  imports: [TranslateModule, Project, Feedback,  SectionDivider],
   templateUrl: './portfolio.html',
   styleUrl: './portfolio.scss'
 })
