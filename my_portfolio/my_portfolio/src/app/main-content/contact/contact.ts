@@ -23,7 +23,7 @@ export class Contact {
   mailSendFailed = false;
 
   post = {
-    endPoint: 'https://portfolio.atsyp.com/sendMail.php',
+    endPoint: 'https://anastasia-tsypkaykina.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
