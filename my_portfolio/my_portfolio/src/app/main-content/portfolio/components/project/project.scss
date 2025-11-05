@@ -120,11 +120,11 @@ p {
         align-items: center;
 
         &.align-right {
-            flex-direction: column-reverse;
+            flex-direction: column;
         }
 
         &.align-left {
-            flex-direction: column-reverse;
+            flex-direction: column;
         }
     }
    

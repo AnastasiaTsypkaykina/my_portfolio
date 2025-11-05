@@ -59,8 +59,8 @@
     "projects.pokedex": "Pokedex",
     "projects.pokedex.description": "A web application that retrieves Pokémon data from the PokéAPI. Search Pokémon by types, levels and abilities.",
 
-    "feedback.author_max": "",
-    "feedback.feedback_max": "",
+   "feedback.author_max": "Sara Müller",
+    "feedback.feedback_max": "Anastasia has done a great job! ",
 
     "contact.contact": "Contact",
     "contact.title": "Got a problem to solve?",

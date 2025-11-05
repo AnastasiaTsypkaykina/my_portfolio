@@ -59,8 +59,8 @@
     "projects.pokedex": "Pokédex",
     "projects.pokedex.description": "Eine Webanwendung, die Pokémon-Daten von der PokéAPI abruft. Durchsuchen Sie Pokémon nach Typen, Stufen und Fähigkeiten.",
 
-    "feedback.author_max": "",
-    "feedback.feedback_max": "",
+    "feedback.author_max": "Sara Müller",
+    "feedback.feedback_max": "Anastasia hat einen grossartigen Job geleistet! Ihre Freundlichkeit und Proffessionalität haben die Zusammenarbeit sehr angenehm gemacht. Ich bin mit dem Endergebnis mehr als zufrieden und kann Anastasia wärmstens weiterempfehlen.",
 
     "contact.contact": "Kontakt",
     "contact.title": "Möchtest du ein Problem lösen?",
