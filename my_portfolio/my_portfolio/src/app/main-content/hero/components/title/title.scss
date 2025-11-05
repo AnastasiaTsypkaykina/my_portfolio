@@ -19,8 +19,8 @@ td {
     font-size: 64px;
     text-align-last: justify;
     white-space: nowrap;
-    padding-top: 20px;
-    padding-bottom: 28px;
+    padding-top: 85px;
+    padding-bottom: 20px;
     transition: all 125ms ease-in-out;
 }
 
@@ -107,8 +107,7 @@ td {
 @media (max-width: 500px) {
     .vertical {
         font-size: 24px;
-        padding-top: 8px;
-        padding-bottom: 8px;
+        
     }
 
     .title {

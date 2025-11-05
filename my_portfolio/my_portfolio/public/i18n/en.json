@@ -2,6 +2,8 @@
     "TITLE": "Hello!",
     "MESSAGE": "It's me, Anastasia Tsypkaykina.",
 
+    "intro.logo": "I am",
+
     "header.aboutme": "About me",
     "header.skills": "Skills",
     "header.portfolio": "Portfolio",
