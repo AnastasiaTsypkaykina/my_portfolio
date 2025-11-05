@@ -22,10 +22,10 @@ export class Header {
   showMenu: boolean = false;
 
   private readonly iconMenuFrames = [
-    '/icons/burger.svg',
-    '/icons/burger-transition.svg',
-    '/icons/close-transition.svg',
-    '/icons/close.svg'
+    '/icon/burger.svg',
+    '/icon/burger-transition.svg',
+    '/icon/close-transition.svg',
+    '/icon/close.svg'
   ];
 
   iconMenu = this.iconMenuFrames[0];

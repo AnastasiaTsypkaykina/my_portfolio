@@ -69,11 +69,11 @@ textarea::-webkit-scrollbar {
         pointer-events: none;
 
         &.valid {
-            content: url('/icons/valid.svg');
+            content: url('/icon/valid.svg');
         }
 
         &.invalid {
-            content: url('/icons/invalid.svg');
+            content: url('/icon/invalid.svg');
         }
     }
     
@@ -87,11 +87,11 @@ textarea::-webkit-scrollbar {
         transition: all 125ms ease;
         
         &.valid {
-            content: url('/icons/textarea-drag-valid.svg');
+            content: url('/icon/textarea-drag-valid.svg');
         }
 
         &.invalid {
-            content: url('/icons/textarea-drag-invalid.svg');
+            content: url('/icon/textarea-drag-invalid.svg');
         }
     }
 }
@@ -117,7 +117,7 @@ textarea::-webkit-scrollbar {
 }
 
 .input-field-wrapper:hover .textarea-resize-handle:not(.invalid) {
-    content: url('/icons/textarea-drag-valid.svg');
+    content: url('/icon/textarea-drag-valid.svg');
 }
 
 .input-field-wrapper .input-field { 
@@ -171,7 +171,7 @@ textarea::-webkit-scrollbar {
     .checkbox-img {
         width: 24px;
         height: 24px;
-        background: url('/icons/check.svg');
+        background: url('/icon/check.svg');
         background-size: contain;
         background-repeat: no-repeat;
         transition: background-image 125ms ease;
@@ -179,15 +179,15 @@ textarea::-webkit-scrollbar {
     }
 
     &:hover input:not(:checked) + .checkbox-img {
-        background-image: url('/icons/check-hover.svg');
+        background-image: url('/icon/check-hover.svg');
     }
 
     input:checked + .checkbox-img {
-        background-image: url('/icons/check-checked.svg');
+        background-image: url('/icon/check-checked.svg');
     }
 
     &:hover input:checked + .checkbox-img {
-        background-image: url('/icons/check-checked-hover.svg');
+        background-image: url('/icon/check-checked-hover.svg');
     }
 
     > .checkbox-text {
@@ -200,14 +200,14 @@ textarea::-webkit-scrollbar {
 }
 
 .checkbox {
-    background: url('/icons/checkbox.svg') no-repeat center;
+    background: url('/icon/checkbox.svg') no-repeat center;
 
     &:hover {
-        background: url('/icons/checkbox-hover.svg') no-repeat center;
+        background: url('/icon/checkbox-hover.svg') no-repeat center;
     }
 
     &.checked {
-        background: url('/icons/checkbox-checked.svg') no-repeat center;
+        background: url('/icon/checkbox-checked.svg') no-repeat center;
     }
 }
 
