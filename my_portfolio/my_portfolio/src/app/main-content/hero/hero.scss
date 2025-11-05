@@ -86,7 +86,7 @@ section {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        gap: 24px;
+        gap: 400px;
     }
 
     .hero-me-placeholder {
@@ -96,23 +96,28 @@ section {
     }
 
     .title {
-        position: static;
+        
         margin: 0 auto;
         display: block;
+        top: 400px;
+        right: 230px;
     }
 
     .letstalk {
-        position: static;
+        
         margin: 0 auto;
         display: block;
+        top: 600px;
+        right: 130px;
     }
 
     .footer {
-        position: static;
+        
         margin: 0 auto;
         display: block;
         width: 100%;
         margin-bottom: 20px;
+        top: 700px;
     }
 
     .scrolldown {
