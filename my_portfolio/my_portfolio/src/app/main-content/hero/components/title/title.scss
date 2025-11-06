@@ -4,7 +4,7 @@ table {
     border-spacing: 0;
     border-collapse: collapse;
     text-indent: 0;
-    margin-right: -200px;
+    margin-right: -100px;
 }
 
 td {
@@ -26,7 +26,7 @@ td {
 
 .title {
     color: white;
-    font-size: 76px;
+    font-size: 70px;
     font-weight: 700;
     vertical-align: top;
     transition: font-size 125ms ease-in-out;
@@ -39,7 +39,23 @@ td {
     transition: font-size 125ms ease-in-out;
 }
 
-
+@media (max-width: 1580px) {
+    .title {
+        font-size: 60px;
+        right: 30px;
+    }
+    .table {
+        margin-right: -10px;
+    }
+}
+@media (max-width: 1515px) {
+    .title {
+        font-size: 60px;
+    }
+    .table {
+        margin-right: 0px;
+    }
+}
 @media (max-width: 1380px) {
     .vertical {
         font-size: 58px;
@@ -48,11 +64,14 @@ td {
     }
 
     .title {
-        font-size: 66px;
+        font-size: 60px;
     }
 
     .subtitle {
         font-size: 52px;
+    }
+    .table {
+        margin-right: -50px;
     }
 }
 

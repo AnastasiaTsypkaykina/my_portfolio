@@ -48,12 +48,24 @@ section {
         writing-mode: tb-rl;
     }
 }
-
+@media (max-width: 1580px) {
+    .title {
+        right: 180px;
+    }
+}
 @media (max-width: 1380px) {
     .letstalk {
         right: 320px;
         top: 350px;
         font-size: 23px;
+    }
+    .title {
+        right: 140px;
+    }
+}
+@media (max-width: 1325px) {
+    .title {
+        right: 100px;
     }
 }
 
