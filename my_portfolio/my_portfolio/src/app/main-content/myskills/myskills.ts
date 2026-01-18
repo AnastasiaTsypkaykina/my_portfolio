@@ -15,8 +15,8 @@ import { SectionDivider } from '../../shared/section-divider/section-divider';
 @Component({
   selector: 'app-myskills',
   imports: [TranslateModule, Skill, OverlayModule, RouterLink, SectionDivider ],
-  templateUrl: '/myskills.html',
-  styleUrl: '/myskills.scss'
+  templateUrl: './myskills.html',
+  styleUrl: './myskills.scss'
 })
 export class Myskills {
   @ViewChild('target') targetRef!: ElementRef;

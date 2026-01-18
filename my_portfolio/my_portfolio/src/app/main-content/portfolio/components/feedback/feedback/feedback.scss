@@ -16,6 +16,25 @@ span {
     margin-top: 150px;
     margin-left: 60px;
 }
+.arrows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 130px;
+    margin-top: 50px
+}
+
+.arrow-right {
+    height: 30px;
+    width: 30px;
+    rotate: 180deg;
+}
+.arrow-left {
+    
+    height: 30px;
+    width: 30px;
+}
 
 .feedback-img {
     position: absolute;

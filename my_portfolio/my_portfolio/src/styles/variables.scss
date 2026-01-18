@@ -14,5 +14,6 @@ $max_container_width: 1440px;
 @media (max-width: 900px) {
     :root {
         --footer-height: 380px;
+        overflow-x: hidden;
     }
 }
