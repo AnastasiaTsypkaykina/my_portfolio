@@ -9,5 +9,11 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrl: './legal-notice.scss'
 })
 export class LegalNotice {
-  constructor(public translate: TranslateService) { }
+  constructor(public translate: TranslateService) { 
+
+
+  }
+  close(): void {
+    window.history.back();
+  }
 }

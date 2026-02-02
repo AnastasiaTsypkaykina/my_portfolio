@@ -1,4 +1,12 @@
 <section class="content-container">
+    <button
+      class="close-btn"
+      type="button"
+      aria-label="Close"
+      (click)="close()"
+    >
+      ×
+    </button>
     <div class="page-container" *ngIf="translate.currentLang === 'de'">
         <h1>Impressum</h1>
         <p><b>Informationen und Offenlegung gemäß &sect;5 (1) ECG, &sect; 25 MedienG, &sect; 63 GewO und &sect; 14
