@@ -21,3 +21,42 @@ a {
         color: $color_primary1;
     }
 }
+
+.content-container {
+  position: relative;
+}
+
+/* X Button */
+.close-btn {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 9999;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  background: rgba(10, 18, 34, 0.65);
+  color: #fff;
+
+  font-size: 32px;
+  line-height: 0;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  backdrop-filter: blur(6px);
+}
+
+.close-btn:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.close-btn:active {
+  transform: scale(0.98);
+}
+
