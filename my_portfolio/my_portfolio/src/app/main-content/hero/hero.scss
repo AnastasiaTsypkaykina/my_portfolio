@@ -240,4 +240,17 @@ section {
   .spacer {
     flex-grow: 1;
   }
+
+  @media (width: 360px) and (height: 740px) {
+    .letstalk {
+      margin: 0 auto;
+      display: block;
+      top: 500px;
+      right: 10px;
+    }
+
+    .footer {
+        bottom: 0px;
+    }
+  }
 }

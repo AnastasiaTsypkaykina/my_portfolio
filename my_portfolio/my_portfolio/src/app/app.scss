@@ -123,6 +123,11 @@
         top: 210px;
     }
 }
+@media (width: 360px) and (height: 740px) {
+    .hero-bg-container {
+        top: 395px;
+    }
+}
 @media (max-width: 200px) {
     .hero-bg-container {
         top: 400px;
