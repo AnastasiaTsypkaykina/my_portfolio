@@ -1,5 +1,5 @@
 import { ApplicationConfig, provideBrowserGlobalErrorListeners, provideZoneChangeDetection, importProvidersFrom  } from '@angular/core';
-import { provideRouter, RouterModule, withInMemoryScrolling, withRouterConfig  } from '@angular/router';
+import { provideRouter, RouterModule, withHashLocation, withInMemoryScrolling, withRouterConfig  } from '@angular/router';
 
 import { routes } from './app.routes';
 
@@ -22,6 +22,7 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(),
     importProvidersFrom(OverlayModule),
     provideRouter(routes,
+      withHashLocation(),       
       withInMemoryScrolling({
         anchorScrolling: 'enabled',
         scrollPositionRestoration: 'enabled'
