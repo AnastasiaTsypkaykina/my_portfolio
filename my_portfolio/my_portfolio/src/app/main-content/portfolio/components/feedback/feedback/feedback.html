@@ -1,27 +1,51 @@
-<div class="content">
-  <div class="feedback">
-    <p class="feedback-text">
-      {{ "feedback.feedback_" + author | translate }}
-    </p>
-    <div class="feedback-author">
-      <div class="line-author"></div>
-      <span>{{ "feedback.author_" + author | translate }}</span>
+<div class="feedback-wrapper">
+  <div
+    class="feedback-slider"
+    [style.transform]="'translateX(-' + currentIndex * 100 + '%)'"
+  >
+    <div class="feedback-slide" *ngFor="let author of feedbacks">
+      <div class="content">
+        <div class="feedback">
+          <p class="feedback-text">
+            {{ "feedback.feedback_" + author | translate }}
+          </p>
+
+          <div class="feedback-author">
+            <div class="line-author"></div>
+            <span>{{ "feedback.author_" + author | translate }}</span>
+          </div>
+
+          <img class="feedback-img" src="./icon/feedback.svg" alt="" />
+        </div>
+
+        <div class="img-box">
+          <img
+            class="img-feedback"
+            src="./img/feedback_{{ author }}.png"
+            alt=""
+          />
+
+          <div class="line"></div>
+        </div>
+      </div>
     </div>
-    <img class="feedback-img" src="./icon/feedback.svg" />
   </div>
-  <div class="img-box" #contentContainer>
-    <app-section-divider
-      align="right"
-      color="#9747FF"
-      [containerEl]="contentContainerRef.nativeElement"
-    ></app-section-divider>
-    <img class="img-feedback" src="./img/feedback_{{ author }}.png" />
-    <div class="line"></div>
-  </div>
-</div>
-<div class="arrows">
-  <div>
-    <img class="arrow-right" src="./img/right-arrow.svg" />
-    <img class="arrow-left" src="./img/right-arrow.svg" />
+
+  <div class="arrows">
+    <img
+      class="arrow-left"
+      src="./img/right-arrow.svg"
+      alt="prev"
+      (click)="prev()"
+      [class.disabled]="isFirst"
+    />
+
+    <img
+      class="arrow-right"
+      src="./img/right-arrow.svg"
+      alt="next"
+      (click)="next()"
+      [class.disabled]="isLast"
+    />
   </div>
 </div>

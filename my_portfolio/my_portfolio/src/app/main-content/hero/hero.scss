@@ -1,253 +1,243 @@
-@use 'index' as *;
+@use "index" as *;
 
 section {
-    position: relative;
-    width: 100%;
-    height: calc(100vh - var(--header-height));
+  position: relative;
+  width: 100%;
+  height: calc(100vh - var(--header-height));
 }
 
 .hero-me-placeholder {
-    margin-top: 30px;
-    display: none;
-    width: 550px;
-    height: auto;
+  margin-top: 30px;
+  display: none;
+  width: 550px;
+  height: auto;
 }
 
 .title {
-    position: absolute;
-    right: 70px;
-    top: 100px;
+  position: absolute;
+  right: 70px;
+  top: 100px;
 }
 
 .footer {
-    position: absolute;
-    bottom: 60px;
-    left: 0;
+  position: absolute;
+  bottom: 60px;
+  left: 0;
 }
 
 .letstalk {
-    position: absolute;
-    right: 400px;
-    top: 400px;
-    padding: 15px 30px;
-    font-size: 23px;
-    font-weight: 400;
+  position: absolute;
+  right: 400px;
+  top: 400px;
+  padding: 15px 30px;
+  font-size: 23px;
+  font-weight: 400;
 }
 
 .scrolldown {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    bottom: 30px;
-    right: 76px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 30px;
+  right: 76px;
 
-    > span {
-        color: white;
-        font-size: 23px;
-        font-weight: 400;
-        writing-mode: tb-rl;
-    }
+  > span {
+    color: white;
+    font-size: 23px;
+    font-weight: 400;
+    writing-mode: tb-rl;
+  }
 }
 @media (max-width: 1580px) {
-    .title {
-        right: 180px;
-    }
+  .title {
+    right: 180px;
+  }
 }
 @media (max-width: 1380px) {
-    .letstalk {
-        right: 320px;
-        top: 350px;
-        font-size: 23px;
-    }
-    .title {
-        right: 140px;
-    }
+  .letstalk {
+    right: 320px;
+    top: 350px;
+    font-size: 23px;
+  }
+  .title {
+    right: 140px;
+  }
 }
 @media (max-width: 1325px) {
-    .title {
-        right: 100px;
-    }
+  .title {
+    right: 100px;
+  }
 }
 
 @media (max-width: 1280px) {
-    .letstalk {
-        right: 280px;
-        top: 300px;
-        font-size: 21px;
-    }
+  .letstalk {
+    right: 280px;
+    top: 300px;
+    font-size: 21px;
+  }
 }
 
 @media (max-width: 1180px) {
-    .letstalk {
-        right: 220px;
-        top: 300px;
-        font-size: 19px;
-    }
+  .letstalk {
+    right: 220px;
+    top: 300px;
+    font-size: 19px;
+  }
 }
 
 @media (max-width: 1080px) {
-    .letstalk {
-        right: 180px;
-        top: 260px;
-        font-size: 16px;
-    }
+  .letstalk {
+    right: 180px;
+    top: 260px;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 900px) {
-    section {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 400px;
-    }
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 400px;
+  }
 
-    .hero-me-placeholder {
-        display: block;
-        margin-top: 0px;
-        width: 280px;
-    }
+  .hero-me-placeholder {
+    display: block;
+    margin-top: 0px;
+    width: 280px;
+  }
 
-    .title {
-        
-        margin: 0 auto;
-        display: block;
-        top: 550px;
-        right: 230px;
-    }
+  .title {
+    margin: 0 auto;
+    display: block;
+    top: 550px;
+    right: 230px;
+  }
 
-    .letstalk {
-        
-        margin: 0 auto;
-        display: block;
-        top: 750px;
-        right: 130px;
-    }
+  .letstalk {
+    margin: 0 auto;
+    display: block;
+    top: 750px;
+    right: 130px;
+  }
 
-    .footer {
-        
-        margin: 0 auto;
-        display: block;
-        width: 100%;
-        
-        
-    }
+  .footer {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+  }
 
-    .scrolldown {
-        display: none;
-    }
+  .scrolldown {
+    display: none;
+  }
 
-    .spacer {
-        flex-grow: 1;
-    }
+  .spacer {
+    flex-grow: 1;
+  }
 }
 
 @media (max-width: 420px) {
-    section {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 400px;
-    }
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 400px;
+  }
 
-    .hero-me-placeholder {
-        display: block;
-        margin-top: 0px;
-        width: 280px;
-    }
+  .hero-me-placeholder {
+    display: block;
+    margin-top: 0px;
+    width: 280px;
+  }
 
-    .title {
-        
-        margin: 0 auto;
-        display: block;
-        top: 520px;
-        right: 230px;
-    }
+  .title {
+    margin: 0 auto;
+    display: block;
+    top: 520px;
+    right: 230px;
+  }
 
-    .letstalk {
-        
-        margin: 0 auto;
-        display: block;
-        top: 630px;
-        right: 50px;
-    }
+  .letstalk {
+    margin: 0 auto;
+    display: block;
+    top: 630px;
+    right: 50px;
+  }
 
-    .footer {
-        
-        margin: 0 auto;
-        display: block;
-        width: 100%;
-        bottom: 10px
-        
-    }
+  .footer {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    bottom: 10px;
+  }
 
-    .scrolldown {
-        display: none;
-    }
+  .scrolldown {
+    display: none;
+  }
 
-    .spacer {
-        flex-grow: 1;
-    }
+  .spacer {
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 431px) {
+  .letstalk {
+    margin: 0 auto;
+    display: block;
+    top: 660px;
+    right: 50px;
+  }
+}
+
+@media (min-width: 385px) and (max-width: 405px) and (min-height: 800px) and (max-height: 880px) {
+  .letstalk {
+    margin: 0 auto;
+    display: block;
+    top: 600px;
+    right: 50px;
+  }
 }
 
 @media (max-width: 375px) {
-    section {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 400px;
-    }
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 400px;
+  }
 
-    .hero-me-placeholder {
-        display: block;
-        margin-top: 0px;
-        width: 280px;
-    }
+  .hero-me-placeholder {
+    display: block;
+    margin-top: 0px;
+    width: 280px;
+  }
 
-    .title {
-        
-        margin: 0 auto;
-        display: block;
-        top: 300px;
-        right: 230px;
-        
-    }
+  .title {
+    margin: 0 auto;
+    display: block;
+    top: 300px;
+    right: 230px;
+  }
 
-    .letstalk {
-        
-        margin: 0 auto;
-        display: block;
-        top: 400px;
-        right: 30px;
-    }
+  .letstalk {
+    margin: 0 auto;
+    display: block;
+    top: 400px;
+    right: 30px;
+  }
 
-    .footer {
-        
-        margin: 0 auto;
-        display: block;
-        width: 100%;
-        bottom: 10px;
-        
-    }
+  .footer {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    bottom: 10px;
+  }
 
-    .scrolldown {
-        display: none;
-    }
+  .scrolldown {
+    display: none;
+  }
 
-    .spacer {
-        flex-grow: 1;
-    }
+  .spacer {
+    flex-grow: 1;
+  }
 }
-
-
-// @media (max-width: 900px) and (max-height: 700px) {
-//     section {
-//         display: flex;
-//         flex-direction: column;
-//         align-items: flex-end;
-//         gap: 12px;
-//     }
-
-//     .hero-me-placeholder {
-//         width: 200px;
-//     }
-// }
