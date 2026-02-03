@@ -71,6 +71,7 @@ html {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  overflow: visible;
 }
 
 .page-content {
@@ -81,6 +82,15 @@ html, body {
   width: 100%;
   overflow-x: hidden;
 }
+
+:root {
+  --header-height: 109px; /* exakt deine Header-Höhe */
+}
+
+.page-content {
+  padding-top: var(--header-height);
+}
+
 
 
 /* poppins-100 - latin */
