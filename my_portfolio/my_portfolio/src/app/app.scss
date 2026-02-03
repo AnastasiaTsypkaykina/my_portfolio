@@ -29,7 +29,7 @@
     margin-left: 140px;
     margin-bottom: 80px;
     width: 40vw;
-    top: 0;
+    top: 50px;
     width: 550px;
     min-width: 0;
     height: auto;
@@ -39,7 +39,7 @@
     display: flex;
     position: absolute;
     left: 0px;
-    top: 340px;
+    top: 420px;
     width: 100%;
     height: 700px;
 
@@ -102,7 +102,7 @@
         display: flex;
         position: absolute;
         left: 0px;
-        top: 400px;
+        top: 500px;
         width: 100%;
         height: 200px;
     }
@@ -125,7 +125,7 @@
 }
 @media (width: 360px) and (height: 740px) {
     .hero-bg-container {
-        top: 395px;
+        top: 445px;
     }
 }
 @media (max-width: 200px) {
@@ -140,6 +140,6 @@
 
     .img-photoshadow {
         width: 200px;
-    }
+    }   
 
 }  
