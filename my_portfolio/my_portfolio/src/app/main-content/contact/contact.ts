@@ -8,12 +8,19 @@ import { SectionDivider } from '../../shared/section-divider/section-divider';
 
 @Component({
   selector: 'app-contact',
-  imports: [TranslateModule, CommonModule, FormsModule, RouterLink, SectionDivider],
+  imports: [
+    TranslateModule,
+    CommonModule,
+    FormsModule,
+    RouterLink,
+    SectionDivider,
+  ],
   templateUrl: './contact.html',
-  styleUrl: './contact.scss'
+  styleUrl: './contact.scss',
 })
-export class Contact {  
-  @ViewChild('contentContainer', { static: true }) contentContainerRef!: ElementRef;
+export class Contact {
+  @ViewChild('contentContainer', { static: true })
+  contentContainerRef!: ElementRef;
 
   http = inject(HttpClient);
 
@@ -33,8 +40,7 @@ export class Contact {
     },
   };
 
-  constructor(private translate: TranslateService) {
-  }
+  constructor(private translate: TranslateService) {}
 
   markAsTouched(input: any) {
     if (!input.touched) {
@@ -49,18 +55,25 @@ export class Contact {
 
   onSubmit(form: NgForm) {
     let contactData = {
-      "name": form.value.contactName,
-      "email": form.value.contactEmail,
-      "message": form.value.contactMessage
-    }
-    
+      name: form.value.contactName,
+      email: form.value.contactEmail,
+      message: form.value.contactMessage,
+    };
+
     if (form.submitted && form.form.valid && !this.mailTest) {
-      this.http.post(this.post.endPoint, this.post.body(contactData))
+      this.http
+        .post(this.post.endPoint, this.post.body(contactData))
         .subscribe({
           next: (response) => {
             this.mailSended = true;
-            form.resetForm();
+
+            setTimeout(() => {
+              this.mailSended = false;
+              this.mailSendFailed = false;
+              form.resetForm();
+            }, 2000);
           },
+
           error: (error) => {
             this.mailSendFailed = true;
             console.error(error);
@@ -68,9 +81,13 @@ export class Contact {
           complete: () => console.info('send post complete'),
         });
     } else if (form.submitted && form.form.valid && this.mailTest) {
-      form.resetForm();
       this.mailSended = true;
       this.mailSendFailed = false;
+
+      setTimeout(() => {
+        this.mailSended = false;
+        form.resetForm();
+      }, 3000);
     }
   }
 }
