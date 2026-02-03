@@ -21,8 +21,7 @@ export const appConfig: ApplicationConfig = {
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideHttpClient(),
     importProvidersFrom(OverlayModule),
-    provideRouter(routes,
-      withHashLocation(),       
+    provideRouter(routes,             
       withInMemoryScrolling({
         anchorScrolling: 'enabled',
         scrollPositionRestoration: 'enabled'

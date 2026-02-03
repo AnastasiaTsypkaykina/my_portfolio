@@ -8,17 +8,16 @@ import { TranslateService } from '@ngx-translate/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './privacy-policy.html',
-  styleUrl: './privacy-policy.scss'
+  styleUrl: './privacy-policy.scss',
 })
 export class PrivacyPolicy {
   constructor(
     public translate: TranslateService,
     private location: Location,
-    private router: Router
+    private router: Router,
   ) {}
 
- close(): void {
-  this.router.navigate(['./'], { fragment: 'contact' });
-}
-
+  close(): void {
+    this.router.navigate(['/'], { fragment: 'contact' });
+  }
 }

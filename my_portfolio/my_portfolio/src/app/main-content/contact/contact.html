@@ -16,8 +16,9 @@
     <div>
       <form
         #myForm="ngForm"
-        (ngSubmit)="onSubmit(myForm)"
+        (submit)="onSubmit(myForm); $event.preventDefault()"
         *ngIf="!mailSended && !mailSendFailed"
+        novalidate
       >
         <div>
           <div class="input-field-wrapper">
@@ -186,5 +187,5 @@
       </div>
     </div>
   </div>
-  <a class="gototop" [routerLink]="[]" fragment="hero"><span>↑</span></a>
+  <a class="gototop" fragment="hero"> <span>↑</span></a>
 </section>
