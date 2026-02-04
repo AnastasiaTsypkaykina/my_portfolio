@@ -26,10 +26,10 @@
 }
 
 .hero-me {
-    margin-left: 140px;
+    margin-left: 50px;
     margin-bottom: 80px;
     width: 40vw;
-    top: 50px;
+    top: 150px;
     width: 550px;
     min-width: 0;
     height: auto;
@@ -39,7 +39,7 @@
     display: flex;
     position: absolute;
     left: 0px;
-    top: 420px;
+    top: 520px;
     width: 100%;
     height: 700px;
 
@@ -102,7 +102,7 @@
         display: flex;
         position: absolute;
         left: 0px;
-        top: 500px;
+        top: 600px;
         width: 100%;
         height: 200px;
     }
@@ -118,16 +118,28 @@
     }
     
 }
-@media (max-width: 375px) {
-    .hero-bg-container {
-        top: 280px;
-    }
-}
+
 @media (width: 360px) and (height: 740px) {
     .hero-bg-container {
         top: 445px;
     }
+    .hero-me {
+        top: 30px;
+    }
 }
+
+@media (width: 375px) and (height: 667px) {
+    .hero-bg-container {
+        top: 345px;
+    }
+    .hero-me {
+        top: 120px;
+    }
+}
+
+
+
+
 @media (max-width: 200px) {
     .hero-bg-container {
         top: 400px;

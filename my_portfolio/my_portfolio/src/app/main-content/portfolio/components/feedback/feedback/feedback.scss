@@ -13,13 +13,16 @@ span {
 
 .content {
   display: flex;
-  justify-content: center; /* 🔥 zentriert die gesamte Sektion */
+  justify-content: center;
   align-items: center;
-  gap: 64px; /* Abstand zwischen Karte und Bild */
-  margin-left: 0; /* 🔥 ganz wichtig */
-  padding-inline: 32px; /* damit es nicht am Rand klebt */
+
+  gap: 64px;
+  padding-inline: clamp(16px, 5vw, 64px);
+  margin: 0 auto;
+
   box-sizing: border-box;
 }
+
 
 .arrows {
   display: flex;
@@ -77,15 +80,17 @@ span {
 
   border: 4px solid $color_primary1;
   border-radius: 32px;
-  padding: 48px 96px;
 
-  flex: 0 0 720px; /* 🔥 immer gleiche Breite */
-  width: 720px; /* 🔥 zusätzlich stabil */
-  box-sizing: border-box;
-  max-width: 100%;
+  padding: clamp(16px, 4vw, 48px);
+
+  width: 100%;
+  max-width: 720px;   /* Desktop-Größe */
+  margin-inline: auto;
 
   min-height: 320px;
+  box-sizing: border-box;
 }
+
 
 .feedback-author {
   display: flex;
@@ -100,7 +105,7 @@ span {
 
   margin-left: 0; /* 🔥 raus, Abstand macht jetzt gap */
   width: auto; /* 🔥 ganz wichtig */
-  flex: 0 0 260px; /* feste Spalte für Bild */
+  
 
   position: relative;
 }
@@ -147,83 +152,9 @@ span {
   align-items: center;
 }
 
-@media (max-width: 1200px) {
-  .line {
-    min-width: 100px;
-  }
-}
-
 @media (max-width: 1100px) {
-  .line {
-    position: absolute;
-    left: calc(50% + 110px);
-  }
-
   .content {
     flex-direction: column-reverse;
-    align-items: center;
-    margin-top: 80px;
-    padding-right: 80px;
-  }
-
-  .img-box {
-    position: relative;
-    width: 100%;
-    height: 260px;
-    margin-left: 0px;
-  }
-
-  .img-feedback {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 50%;
-    z-index: 1;
-  }
-}
-
-@media (max-width: 900px) {
-  p,
-  span {
-    font-size: 16px;
-  }
-
-  .content {
-    padding-right: 20px;
-    margin-left: 20px;
-  }
-
-  .feedback {
-    min-height: 220px;
-    padding: 24px 32px;
-  }
-
-  .feedback-img {
-    left: -30px;
-    top: -50px;
-  }
-}
-
-@media (max-width: 500px) {
-  .feedback {
-    min-height: 220px;
-    padding: 12px 12px;
-  }
-
-  .feedback-img {
-    left: -20px;
-    top: -26px;
-    width: 50px;
-  }
-
-  @media (max-width: 1100px) {
-  .feedback {
-    width: 600px;
-    flex: 0 0 600px;
-    padding: 32px 48px;
-  }
-
-  .content {
     gap: 40px;
   }
 
@@ -233,56 +164,21 @@ span {
 }
 
 @media (max-width: 900px) {
+  p, span {
+    font-size: 16px;
+  }
+
   .feedback {
-    width: 100%;
-    flex: 0 0 auto;
-    padding: 24px 32px;
-  }
-
-  .content {
-    padding-inline: 20px;
-    gap: 32px;
-  }
-
-  .img-feedback {
-    width: 180px;
-  }
-}
-
-@media (max-width: 500px) {
-  .feedback {
-    padding: 16px;
     min-height: auto;
-  }
-
-  .content {
-    padding-inline: 12px;
-    gap: 24px;
   }
 
   .img-feedback {
     width: 140px;
   }
-
-  .feedback-img {
-    left: -16px;
-    top: -16px;
-    width: 48px;
-  }
 }
 
-@media (max-width: 375px) {
-  .content {
-    padding-inline: 8px;
-  }
-
-  .feedback {
-    padding: 12px;
-  }
-
+@media (max-width: 500px) {
   .img-feedback {
     width: 120px;
   }
-}
-
 }
