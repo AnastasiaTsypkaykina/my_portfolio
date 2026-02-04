@@ -64,7 +64,7 @@
               placeholder="{{ 'contact.email' | translate }}"
               required
               email
-              pattern="^[\w-\.]+@([\w-]+\.)+(com|de|ch)$"
+              pattern="^.+@.+\.[A-Za-z]{2,}$"
               [ngClass]="{
                 valid: contactEmail.valid && contactEmail.touched,
                 invalid: contactEmail.invalid && contactEmail.touched,
