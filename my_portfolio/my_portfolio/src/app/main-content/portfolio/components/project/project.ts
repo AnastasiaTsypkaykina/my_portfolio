@@ -30,4 +30,18 @@ export class Project {
 
     observer.observe(this.elementRef.nativeElement);
   }
+
+  get liveTestLink(): string {
+  if (this.project === 'join') {
+    return 'https://join-1351.developerakademie.net';
+  }
+  return `https://anastasia-tsypkaykina.com/${this.project}/index.html`;
+}
+
+get githubLink(): string {
+  if (this.project === 'join') {
+    return 'https://github.com/Younes-Darabi/join-project';
+  }
+  return `https://github.com/AnastasiaTsypkaykina/${this.project}`;
+}
 }
